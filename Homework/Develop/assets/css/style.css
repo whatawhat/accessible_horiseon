@@ -7,7 +7,8 @@
 body {
     background-color: #d9dcd6;
 }
-/*Changed .header to header because I took the class out. I took the class out because there's already an HTML tag for header. I did this throughout the entire CSS.*/
+/*Changed .header to header because I took the class out. I took the class out because there's already an 
+HTML tag for header. I did this throughout the entire CSS.*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -23,7 +24,8 @@ header h1 {
 header h1 .seo {
     color: #d9dcd6;
 }
-/*Changed div to nav because there's a nav tag in HTML. It makes it simpler. I did this throughout the entire CSS.*/
+/*Changed div to nav because there's a nav tag in HTML. It makes it simpler. I did 
+this throughout the entire CSS.*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -78,7 +80,10 @@ main {
     margin-left: 20px;
 }
 
-.benefits {
+
+/*Changed .benefits to .main_right 
+Changed back to .benefits because it wouldn't go to the right side*/
+.main_right {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -94,6 +99,9 @@ main {
     color: #ffffff;
 }
 
+/*No longer needed because there is a .benefit class
+Added it back for now*/
+
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
@@ -103,6 +111,16 @@ main {
     margin-bottom: 32px;
     color: #ffffff;
 }
+*/
+
+/*There's an extra h3 because .benefit-lead h3 will not center even though
+it's written here and identical.*/
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 
 .benefit-lead h3 {
     margin-bottom: 10px;
@@ -118,6 +136,16 @@ main {
     margin-bottom: 10px;
     text-align: center;
 }
+
+
+/*
+.img_right {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+*/
+
 
 .benefit-lead img {
     display: block;
@@ -137,6 +165,9 @@ main {
     max-width: 150px;
 }
 
+
+/*Consolidated class since .online-reputation-management, social-media-marekting, and search-engine-optimization had 
+the same attributes*/
 .key_notes {
     margin-bottom: 20px;
     padding: 50px;
@@ -148,8 +179,9 @@ main {
     font-size: 36px;
 }
 
-/* Removed this class because it was identical to the above class. I made one class that would workd with the three sections.*/
-/* .online-reputation-management {
+
+/* Removed this class because it was identical to the above class. I made one class that would workd with the three sections.
+ .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -167,6 +199,7 @@ main {
     color: #ffffff;
 } */
 
+
 /*
 .search-engine-optimization img {
     max-height: 200px;
@@ -183,9 +216,11 @@ main {
 /* Added img tag here because putting it with the key_notes class didn't limint the max-height to 200px.
 Plus, when placed with the key_notes class, it didn't work on the actual rectangulae. It's only for the
 actual image*/
+
 img {
     max-height: 200px;
 }
+
 /*.search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -208,6 +243,7 @@ h2{
     margin-bottom: 20px;
     font-size: 36px;
 }
+
 .footer {
     padding: 30px;
     clear: both;
