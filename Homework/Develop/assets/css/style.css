@@ -82,7 +82,8 @@ main {
 
 
 /*Changed .benefits to .main_right 
-Changed back to .benefits because it wouldn't go to the right side*/
+Changed back to .benefits because it wouldn't go to the right side
+Changed back to main_right*/
 .main_right {
     margin-right: 20px;
     padding: 20px;
@@ -94,13 +95,18 @@ Changed back to .benefits because it wouldn't go to the right side*/
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/*Changed benefit-lead, benefit-brand and benefit-cost to .benefit */
+
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/*No longer needed because there is a .benefit class
-Added it back for now*/
+/*No longer needed because there's a .benefit class
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
 
 .benefit-brand {
     margin-bottom: 32px;
@@ -122,11 +128,12 @@ h3 {
 }
 
 
-.benefit-lead h3 {
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/*
 .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -136,7 +143,7 @@ h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
+*/
 
 /*
 .img_right {
@@ -146,7 +153,15 @@ h3 {
 }
 */
 
+/*Consoidated .benefit-lead, .benefit-brand, .benefit-cost into one class since they
+share the same selectors*//
+.benefit img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
 
+/*
 .benefit-lead img {
     display: block;
     margin: 10px auto;
@@ -164,7 +179,7 @@ h3 {
     margin: 10px auto;
     max-width: 150px;
 }
-
+*/
 
 /*Consolidated class since .online-reputation-management, social-media-marekting, and search-engine-optimization had 
 the same attributes*/
