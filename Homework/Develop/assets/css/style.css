@@ -62,13 +62,16 @@ p {
 .float-left {
     float: left;
     margin-right: 25px;
+    max-height: 200px;
 }
 
+/*Added max-height here since it's an image. MAYBE CONSIDER REMOVING THE CLASS*/
 .float-right {
     float: right;
     margin-left: 25px;
+    max-height: 200px;
 }
-
+/*Changed .content to a main tag*/
 main {
     width: 75%;
     display: inline-block;
@@ -134,16 +137,19 @@ main {
     max-width: 150px;
 }
 
-.search-engine-optimization {
+.key_notes {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
-.online-reputation-management {
+/* Removed this class because it was identical to the above class. I made one class that would workd with the three sections.*/
+/* .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -159,8 +165,9 @@ main {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-}
+} */
 
+/*
 .search-engine-optimization img {
     max-height: 200px;
 }
@@ -172,8 +179,14 @@ main {
 .social-media-marketing img {
     max-height: 200px;
 }
-
-.search-engine-optimization h2 {
+*/
+/* Added img tag here because putting it with the key_notes class didn't limint the max-height to 200px.
+Plus, when placed with the key_notes class, it didn't work on the actual rectangulae. It's only for the
+actual image*/
+img {
+    max-height: 200px;
+}
+/*.search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -187,7 +200,14 @@ main {
     margin-bottom: 20px;
     font-size: 36px;
 }
+*/
 
+/*Added just an h2 tag since the .social-media-marketing, .search-engine-optimization,
+and .online-reputation-management were removed*/
+h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
 .footer {
     padding: 30px;
     clear: both;
