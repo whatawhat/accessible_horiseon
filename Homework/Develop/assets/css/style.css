@@ -81,9 +81,7 @@ main {
 }
 
 
-/*Changed .benefits to .main_right 
-Changed back to .benefits because it wouldn't go to the right side
-Changed back to main_right*/
+/*Changed .benefits to .main_right*/
 .main_right {
     margin-right: 20px;
     padding: 20px;
@@ -253,12 +251,13 @@ img {
 */
 
 /*Added just an h2 tag since the .social-media-marketing, .search-engine-optimization,
-and .online-reputation-management were removed*/
-h2{
+and .online-reputation-management were removed
+Added .key_notes just in case there are other h2 added*/
+.key_notes h2{
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/*Changed .footer class to footer tag*/
 footer {
     padding: 30px;
     clear: both;
