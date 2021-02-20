@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+/*Changed .header to header because I took the class out. I took the class out because there's already an 
+HTML tag for header. I did this throughout the entire CSS.*/
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .seo {
+    color: #d9dcd6;
+}
+/*Changed div to nav because there's a nav tag in HTML. It makes it simpler. I did 
+this throughout the entire CSS.*/
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+    max-height: 200px;
+}
+
+/*Added max-height here since it's an image. MAYBE CONSIDER REMOVING THE CLASS*/
+.float-right {
+    float: right;
+    margin-left: 25px;
+    max-height: 200px;
+}
+/*Changed .content to a main tag*/
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+/*Changed .benefits to .main_right*/
+.main_right {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/*Changed benefit-lead, benefit-brand and benefit-cost to .benefit */
+
+.benefit {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/*No longer needed because there's a .benefit class
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+*/
+
+/*There's an extra h3 because .benefit-lead h3 will not center even though
+it's written here and identical.*/
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.benefit h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+*/
+
+/*
+.img_right {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+*/
+
+/*Consoidated .benefit-lead, .benefit-brand, .benefit-cost into one class since they
+share the same selectors*//
+.benefit img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+*/
+
+/*Consolidated class since .online-reputation-management, social-media-marekting, and search-engine-optimization had 
+the same attributes*/
+.key_notes {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+/* Removed this class because it was identical to the above class. I made one class that would workd with the three sections.
+ .online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+} */
+
+
+/*
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+*/
+/* Added img tag here because putting it with the key_notes class didn't limint the max-height to 200px.
+Plus, when placed with the key_notes class, it didn't work on the actual rectangulae. It's only for the
+actual image*/
+
+img {
+    max-height: 200px;
+}
+
+/*.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+*/
+
+/*Added just an h2 tag since the .social-media-marketing, .search-engine-optimization,
+and .online-reputation-management were removed
+Added .key_notes just in case there are other h2 added*/
+.key_notes h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/*Changed .footer class to footer tag*/
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
