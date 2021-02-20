@@ -68,7 +68,8 @@ Some highlights include:
 * Links clicked will go straight to the section
 
 ## Live URL
-<whatawhat.gitbub.io/accessible_horiseon>
+https://whatawhat.github.io/accessible_horiseon/
 
 ## GitHub URL
+<whatawhat.gitbub.io/accessible_horiseon>
 
