@@ -4,11 +4,12 @@
 1. [Overview](#overview)
 2. [Importance](#importance)
 3. [Steps Taken](#steps-taken)
-4. [Motivation](#motivation)
-5. [What did I learn](#what-did-i-learn)
-6. [Features/Highlights](#features/highlights)
-7. [Live URL](#live-url)
-8. [GitHub URL](#github-url)
+4. [Notes](#notes)
+5. [Motivation](#motivation)
+6. [What did I learn](#what-did-i-learn)
+7. [Features/Highlights](#features/highlights)
+8. [Live URL](#live-url)
+9. [GitHub URL](#github-url)
 
 ## Overview
 A marketing agency sent their website to me to make it more accessible so many people can use the webite. The goal was to consider those who use accessibility features including screen readers or users who  bave slower broadbands to ensure they could view the page and access it without limitations. The website was to remain the same since it is not my original work. 
@@ -55,6 +56,9 @@ Therefore, I consolidated the code. Below is how I consolidated the code and the
   * Added .key_notes tag to h2
   * Changed footer class to footer tag
   * Comments are included throughout the code
+
+## Notes
+For the alt attributes, I chose to write a very detailed description of the images. Even though the images do not support the text, meaning the text can be understood without the images, I chose to write detailed alt attributes. 
 
 ## Motivation
 As a person who works with people who have visual impairments, I understand the frustration when websites aren't accessible. I also understand the enjoyment and excitement when a website is accessible and the amount of time it saves trying to navigate a website. It was very important to me to make sure I added as many accessible features as possible.
